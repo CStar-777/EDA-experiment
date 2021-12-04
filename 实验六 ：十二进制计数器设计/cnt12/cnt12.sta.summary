@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 100C Model Setup 'divi:u1|clk_out'
+Slack : -3.875
+TNS   : -14.520
+
+Type  : Slow 1200mV 100C Model Setup 'clk'
+Slack : -3.559
+TNS   : -146.418
+
+Type  : Slow 1200mV 100C Model Setup 'cnt:u2|cq[1]'
+Slack : -1.629
+TNS   : -10.447
+
+Type  : Slow 1200mV 100C Model Setup 'seg:u3|div_clk'
+Slack : -0.827
+TNS   : -5.954
+
+Type  : Slow 1200mV 100C Model Hold 'cnt:u2|cq[1]'
+Slack : -0.973
+TNS   : -5.967
+
+Type  : Slow 1200mV 100C Model Hold 'divi:u1|clk_out'
+Slack : -0.858
+TNS   : -1.406
+
+Type  : Slow 1200mV 100C Model Hold 'clk'
+Slack : -0.236
+TNS   : -0.310
+
+Type  : Slow 1200mV 100C Model Hold 'seg:u3|div_clk'
+Slack : 0.412
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'divi:u1|clk_out'
+Slack : -3.187
+TNS   : -12.299
+
+Type  : Slow 1200mV -40C Model Setup 'clk'
+Slack : -2.983
+TNS   : -117.097
+
+Type  : Slow 1200mV -40C Model Setup 'cnt:u2|cq[1]'
+Slack : -1.317
+TNS   : -8.371
+
+Type  : Slow 1200mV -40C Model Setup 'seg:u3|div_clk'
+Slack : -0.584
+TNS   : -4.211
+
+Type  : Slow 1200mV -40C Model Hold 'divi:u1|clk_out'
+Slack : -0.776
+TNS   : -1.454
+
+Type  : Slow 1200mV -40C Model Hold 'cnt:u2|cq[1]'
+Slack : -0.730
+TNS   : -4.204
+
+Type  : Slow 1200mV -40C Model Hold 'clk'
+Slack : -0.220
+TNS   : -0.288
+
+Type  : Slow 1200mV -40C Model Hold 'seg:u3|div_clk'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'divi:u1|clk_out'
+Slack : -1.320
+TNS   : -4.969
+
+Type  : Fast 1200mV -40C Model Setup 'clk'
+Slack : -1.121
+TNS   : -34.946
+
+Type  : Fast 1200mV -40C Model Setup 'cnt:u2|cq[1]'
+Slack : -0.282
+TNS   : -1.330
+
+Type  : Fast 1200mV -40C Model Setup 'seg:u3|div_clk'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'divi:u1|clk_out'
+Slack : -0.530
+TNS   : -0.916
+
+Type  : Fast 1200mV -40C Model Hold 'cnt:u2|cq[1]'
+Slack : -0.455
+TNS   : -2.819
+
+Type  : Fast 1200mV -40C Model Hold 'clk'
+Slack : -0.258
+TNS   : -0.431
+
+Type  : Fast 1200mV -40C Model Hold 'seg:u3|div_clk'
+Slack : 0.177
+TNS   : 0.000
+
+------------------------------------------------------------

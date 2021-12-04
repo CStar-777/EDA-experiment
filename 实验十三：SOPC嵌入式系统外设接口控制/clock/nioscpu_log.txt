@@ -1,0 +1,100 @@
+Altera SOPC Builder Version 9.00 Build 132
+Copyright (c) 1999-2009 Altera Corporation.  All rights reserved.
+
+
+# 2021.12.03 13:58:45 (*) mk_custom_sdk starting
+# 2021.12.03 13:58:45 (*) Reading project D:/clock/nioscpu.ptf.
+
+# 2021.12.03 13:58:45 (*) Finding all CPUs
+# 2021.12.03 13:58:45 (*) Finding all available components
+# 2021.12.03 13:58:45 (*) Reading D:/clock/.sopc_builder/install.ptf
+
+# 2021.12.03 13:58:45 (*) Found 67 components
+
+# 2021.12.03 13:58:45 (*) Finding all peripherals
+
+# 2021.12.03 13:58:45 (*) Finding software components
+
+# 2021.12.03 13:58:45 (*) (Legacy SDK Generation Skipped)
+# 2021.12.03 13:58:45 (*) (All TCL Script Generation Skipped)
+# 2021.12.03 13:58:45 (*) (No Libraries Built)
+# 2021.12.03 13:58:45 (*) (Contents Generation Skipped)
+# 2021.12.03 13:58:45 (*) mk_custom_sdk finishing
+
+# 2021.12.03 13:58:45 (*) Starting generation for system: nioscpu.
+
+.
+.
+.
+.
+.........
+
+# 2021.12.03 13:58:46 (*) Running Generator Program for cpu_0
+
+# 2021.12.03 13:58:46 (*)   Checking for plaintext license.
+# 2021.12.03 13:58:47 (*)   Plaintext license not found.
+# 2021.12.03 13:58:47 (*)   Checking for encrypted license (non-evaluation).
+# 2021.12.03 13:58:47 (*)   Encrypted license found.  SOF will not be time-limited.
+# 2021.12.03 13:58:47 (*)   Getting CPU configuration settings
+# 2021.12.03 13:58:47 (*)   Elaborating CPU configuration settings
+# 2021.12.03 13:58:47 (*)   Creating all objects for CPU
+# 2021.12.03 13:58:47 (*)     Testbench
+
+# 2021.12.03 13:58:47 (*)     Instruction decoding
+# 2021.12.03 13:58:47 (*)       Instruction fields
+# 2021.12.03 13:58:47 (*)       Instruction decodes
+# 2021.12.03 13:58:47 (*)       Signals for RTL simulation waveforms
+# 2021.12.03 13:58:47 (*)       Instruction controls
+# 2021.12.03 13:58:47 (*)     Pipeline frontend
+# 2021.12.03 13:58:47 (*)     Pipeline backend
+# 2021.12.03 13:58:49 (*)   Generating HDL from CPU objects
+# 2021.12.03 13:58:50 (*)   Creating encrypted HDL
+
+# 2021.12.03 13:58:52 (*) Running Generator Program for cfi_flash_0
+
+# 2021.12.03 13:58:52 (*) Running Generator Program for jtag_uart_0
+
+# 2021.12.03 13:58:52 (*) Running Generator Program for button_pio
+
+# 2021.12.03 13:58:53 (*) Running Generator Program for sdram_0
+
+# 2021.12.03 13:58:53 (*) Running Generator Program for led_pio
+
+# 2021.12.03 13:58:54 (*) Running Generator Program for tft_lcd_data
+
+# 2021.12.03 13:58:54 (*) Running Generator Program for tft_lcd_nrst
+
+# 2021.12.03 13:58:54 (*) Running Generator Program for tft_lcd_rs
+
+# 2021.12.03 13:58:55 (*) Running Generator Program for tft_lcd_nrd
+
+# 2021.12.03 13:58:55 (*) Running Generator Program for tft_lcd_nwr
+
+# 2021.12.03 13:58:55 (*) Running Generator Program for col
+
+# 2021.12.03 13:58:56 (*) Running Generator Program for row
+
+.
+
+# 2021.12.03 13:58:56 (*) Running Test Generator Program for sdram_0
+
+# 2021.12.03 13:58:56 (*) Making arbitration and system (top) modules.
+
+# 2021.12.03 13:59:00 (*) Generating Quartus symbol for top level: nioscpu
+
+# 2021.12.03 13:59:00 (*) Symbol D:/clock/nioscpu.bsf already exists, no need to regenerate
+# 2021.12.03 13:59:00 (*) Creating command-line system-generation script: D:/clock/nioscpu_generation_script
+
+# 2021.12.03 13:59:00 (*) Running setup for HDL simulator: modelsim
+
+
+# 2021.12.03 13:59:00 (*) Completed generation for system: nioscpu.
+# 2021.12.03 13:59:00 (*) THE FOLLOWING SYSTEM ITEMS HAVE BEEN GENERATED:
+  SOPC Builder database : D:/clock/nioscpu.ptf 
+  System HDL Model : D:/clock/nioscpu.v 
+  System Generation Script : D:/clock/nioscpu_generation_script 
+
+# 2021.12.03 13:59:00 (*) SUCCESS: SYSTEM GENERATION COMPLETED.
+
+
+Press 'Exit' to exit.

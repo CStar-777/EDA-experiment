@@ -1,0 +1,10 @@
+
+State Machine - |ArbCodeCnt|fsm7:inst3|c_st
+Name c_st.s7 c_st.s6 c_st.s5 c_st.s4 c_st.s3 c_st.s2 c_st.s1 
+c_st.s1 0 0 0 0 0 0 0 
+c_st.s2 0 0 0 0 0 1 1 
+c_st.s3 0 0 0 0 1 0 1 
+c_st.s4 0 0 0 1 0 0 1 
+c_st.s5 0 0 1 0 0 0 1 
+c_st.s6 0 1 0 0 0 0 1 
+c_st.s7 1 0 0 0 0 0 1 

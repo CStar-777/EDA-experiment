@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Nov 12 17:48:57 2021
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : music
+Top-level Entity Name : music
+Family : Cyclone III
+Device : EP3C55U484I7
+Timing Models : Final
+Total logic elements : 147 / 55,856 ( < 1 % )
+    Total combinational functions : 146 / 55,856 ( < 1 % )
+    Dedicated logic registers : 62 / 55,856 ( < 1 % )
+Total registers : 62
+Total pins : 5 / 328 ( 2 % )
+Total virtual pins : 0
+Total memory bits : 5,120 / 2,396,160 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 312 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Fri Oct 22 14:22:17 2021
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : Run8
+Top-level Entity Name : Run8
+Family : Cyclone III
+Device : EP3C55F484I7
+Timing Models : Final
+Total logic elements : 52 / 55,856 ( < 1 % )
+    Total combinational functions : 50 / 55,856 ( < 1 % )
+    Dedicated logic registers : 27 / 55,856 ( < 1 % )
+Total registers : 27
+Total pins : 13 / 328 ( 4 % )
+Total virtual pins : 0
+Total memory bits : 0 / 2,396,160 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 312 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

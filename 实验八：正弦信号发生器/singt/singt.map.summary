@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Oct 11 16:40:08 2021
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : singt
+Top-level Entity Name : singt
+Family : Cyclone III
+Total logic elements : 782
+    Total combinational functions : 490
+    Dedicated logic registers : 594
+Total registers : 594
+Total pins : 9
+Total virtual pins : 0
+Total memory bits : 16,896
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

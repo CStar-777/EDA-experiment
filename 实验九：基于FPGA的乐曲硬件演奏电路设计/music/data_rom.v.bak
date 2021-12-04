@@ -1,0 +1,34 @@
+module data_rom(sel,inclock,q);
+input [1:0]sel;
+input inclock;
+output [4:0]q;
+reg [10:0]Counter;
+
+always @(posedge inclock)begin
+	if(sel==2'b00)//zuguo
+	begin
+		Counter<=0;
+		if(Counter>=320) Counter<=8'd0;
+		else Counter<=Counter+1;
+	end
+	else if(sel==2'b01)//mama
+	begin
+		Counter<=8'd328;
+		if(Counter>=456) Counter<=8'd328;
+		else Counter<=Counter+1;
+	end
+	else if(sel==2'b10)//little star
+	begin
+		Counter<=8'd464;
+		if(Counter>=680) Counter<=8'd464;
+		else Counter<=Counter+1;
+	end
+	else if(sel==2'b11)//two tigers
+	begin
+		Counter<=8'd688;
+		if(Counter>=808) Counter<=8'd688;
+		else Counter<=Counter+1;	
+	end
+end
+romd1 u1(.address(Counter),.clock(inclock),.q(q));
+endmodule

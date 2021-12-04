@@ -1,0 +1,495 @@
+Simulator report for cnt12
+Thu Oct 14 22:37:14 2021
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 211 nodes    ;
+; Simulation Coverage         ;      40.48 % ;
+; Total Number of Transitions ; 11875        ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      40.48 % ;
+; Total nodes checked                                 ; 211          ;
+; Total output ports checked                          ; 210          ;
+; Total output ports with complete 1/0-value coverage ; 85           ;
+; Total output ports with no 1/0-value coverage       ; 123          ;
+; Total output ports with no 1-value coverage         ; 124          ;
+; Total output ports with no 0-value coverage         ; 124          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                      ;
++-------------------------------+-------------------------------+------------------+
+; Node Name                     ; Output Port Name              ; Output Port Type ;
++-------------------------------+-------------------------------+------------------+
+; |cnt12|clk                    ; |cnt12|clk                    ; out              ;
+; |cnt12|a                      ; |cnt12|a                      ; pin_out          ;
+; |cnt12|b                      ; |cnt12|b                      ; pin_out          ;
+; |cnt12|c                      ; |cnt12|c                      ; pin_out          ;
+; |cnt12|d                      ; |cnt12|d                      ; pin_out          ;
+; |cnt12|e                      ; |cnt12|e                      ; pin_out          ;
+; |cnt12|f                      ; |cnt12|f                      ; pin_out          ;
+; |cnt12|g                      ; |cnt12|g                      ; pin_out          ;
+; |cnt12|ds[0]                  ; |cnt12|ds[0]                  ; pin_out          ;
+; |cnt12|ds[1]                  ; |cnt12|ds[1]                  ; pin_out          ;
+; |cnt12|ds[2]                  ; |cnt12|ds[2]                  ; pin_out          ;
+; |cnt12|ds[3]                  ; |cnt12|ds[3]                  ; pin_out          ;
+; |cnt12|ds[4]                  ; |cnt12|ds[4]                  ; pin_out          ;
+; |cnt12|ds[5]                  ; |cnt12|ds[5]                  ; pin_out          ;
+; |cnt12|ds[6]                  ; |cnt12|ds[6]                  ; pin_out          ;
+; |cnt12|ds[7]                  ; |cnt12|ds[7]                  ; pin_out          ;
+; |cnt12|seg:SEG|ds[7]          ; |cnt12|seg:SEG|ds[7]          ; regout           ;
+; |cnt12|seg:SEG|ds[6]          ; |cnt12|seg:SEG|ds[6]          ; regout           ;
+; |cnt12|seg:SEG|ds[5]          ; |cnt12|seg:SEG|ds[5]          ; regout           ;
+; |cnt12|seg:SEG|ds[4]          ; |cnt12|seg:SEG|ds[4]          ; regout           ;
+; |cnt12|seg:SEG|ds[3]          ; |cnt12|seg:SEG|ds[3]          ; regout           ;
+; |cnt12|seg:SEG|ds[2]          ; |cnt12|seg:SEG|ds[2]          ; regout           ;
+; |cnt12|seg:SEG|ds[1]          ; |cnt12|seg:SEG|ds[1]          ; regout           ;
+; |cnt12|seg:SEG|WideOr0        ; |cnt12|seg:SEG|WideOr0        ; out0             ;
+; |cnt12|seg:SEG|ds[0]          ; |cnt12|seg:SEG|ds[0]          ; regout           ;
+; |cnt12|seg:SEG|WideOr1        ; |cnt12|seg:SEG|WideOr1        ; out0             ;
+; |cnt12|seg:SEG|sel[2]         ; |cnt12|seg:SEG|sel[2]         ; regout           ;
+; |cnt12|seg:SEG|WideOr2        ; |cnt12|seg:SEG|WideOr2        ; out0             ;
+; |cnt12|seg:SEG|WideOr3        ; |cnt12|seg:SEG|WideOr3        ; out0             ;
+; |cnt12|seg:SEG|sel[1]         ; |cnt12|seg:SEG|sel[1]         ; regout           ;
+; |cnt12|seg:SEG|WideOr4        ; |cnt12|seg:SEG|WideOr4        ; out0             ;
+; |cnt12|seg:SEG|WideOr5        ; |cnt12|seg:SEG|WideOr5        ; out0             ;
+; |cnt12|seg:SEG|WideOr6        ; |cnt12|seg:SEG|WideOr6        ; out0             ;
+; |cnt12|cnt:CNT|always0~0      ; |cnt12|cnt:CNT|always0~0      ; out0             ;
+; |cnt12|cnt:CNT|cq~0           ; |cnt12|cnt:CNT|cq~0           ; out              ;
+; |cnt12|cnt:CNT|cq~1           ; |cnt12|cnt:CNT|cq~1           ; out              ;
+; |cnt12|cnt:CNT|cq~2           ; |cnt12|cnt:CNT|cq~2           ; out              ;
+; |cnt12|cnt:CNT|cq~3           ; |cnt12|cnt:CNT|cq~3           ; out              ;
+; |cnt12|cnt:CNT|cq~4           ; |cnt12|cnt:CNT|cq~4           ; out              ;
+; |cnt12|cnt:CNT|cq~5           ; |cnt12|cnt:CNT|cq~5           ; out              ;
+; |cnt12|cnt:CNT|cq~6           ; |cnt12|cnt:CNT|cq~6           ; out              ;
+; |cnt12|cnt:CNT|cq~7           ; |cnt12|cnt:CNT|cq~7           ; out              ;
+; |cnt12|cnt:CNT|cq[3]          ; |cnt12|cnt:CNT|cq[3]          ; regout           ;
+; |cnt12|cnt:CNT|cq[2]          ; |cnt12|cnt:CNT|cq[2]          ; regout           ;
+; |cnt12|cnt:CNT|cq[1]          ; |cnt12|cnt:CNT|cq[1]          ; regout           ;
+; |cnt12|cnt:CNT|cq[0]          ; |cnt12|cnt:CNT|cq[0]          ; regout           ;
+; |cnt12|divi:DIVI|count_reg[0] ; |cnt12|divi:DIVI|count_reg[0] ; regout           ;
+; |cnt12|divi:DIVI|count_reg~29 ; |cnt12|divi:DIVI|count_reg~29 ; out              ;
+; |cnt12|divi:DIVI|count_reg~30 ; |cnt12|divi:DIVI|count_reg~30 ; out              ;
+; |cnt12|divi:DIVI|count_reg~31 ; |cnt12|divi:DIVI|count_reg~31 ; out              ;
+; |cnt12|divi:DIVI|count_reg[1] ; |cnt12|divi:DIVI|count_reg[1] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[2] ; |cnt12|divi:DIVI|count_reg[2] ; regout           ;
+; |cnt12|divi:DIVI|clk_out      ; |cnt12|divi:DIVI|clk_out      ; regout           ;
+; |cnt12|seg:SEG|Decoder0~0     ; |cnt12|seg:SEG|Decoder0~0     ; out0             ;
+; |cnt12|seg:SEG|Decoder0~1     ; |cnt12|seg:SEG|Decoder0~1     ; out0             ;
+; |cnt12|seg:SEG|Decoder0~2     ; |cnt12|seg:SEG|Decoder0~2     ; out0             ;
+; |cnt12|seg:SEG|Decoder0~3     ; |cnt12|seg:SEG|Decoder0~3     ; out0             ;
+; |cnt12|seg:SEG|Decoder0~4     ; |cnt12|seg:SEG|Decoder0~4     ; out0             ;
+; |cnt12|seg:SEG|Decoder0~5     ; |cnt12|seg:SEG|Decoder0~5     ; out0             ;
+; |cnt12|seg:SEG|Decoder0~6     ; |cnt12|seg:SEG|Decoder0~6     ; out0             ;
+; |cnt12|seg:SEG|Decoder0~7     ; |cnt12|seg:SEG|Decoder0~7     ; out0             ;
+; |cnt12|seg:SEG|Decoder1~0     ; |cnt12|seg:SEG|Decoder1~0     ; out              ;
+; |cnt12|seg:SEG|Decoder1~1     ; |cnt12|seg:SEG|Decoder1~1     ; out              ;
+; |cnt12|seg:SEG|Decoder1~2     ; |cnt12|seg:SEG|Decoder1~2     ; out              ;
+; |cnt12|seg:SEG|Decoder1~3     ; |cnt12|seg:SEG|Decoder1~3     ; out              ;
+; |cnt12|seg:SEG|Decoder1~4     ; |cnt12|seg:SEG|Decoder1~4     ; out              ;
+; |cnt12|seg:SEG|Decoder1~5     ; |cnt12|seg:SEG|Decoder1~5     ; out              ;
+; |cnt12|seg:SEG|Decoder1~6     ; |cnt12|seg:SEG|Decoder1~6     ; out              ;
+; |cnt12|seg:SEG|Decoder1~7     ; |cnt12|seg:SEG|Decoder1~7     ; out              ;
+; |cnt12|seg:SEG|Decoder1~8     ; |cnt12|seg:SEG|Decoder1~8     ; out              ;
+; |cnt12|seg:SEG|Decoder1~9     ; |cnt12|seg:SEG|Decoder1~9     ; out              ;
+; |cnt12|seg:SEG|Decoder1~10    ; |cnt12|seg:SEG|Decoder1~10    ; out              ;
+; |cnt12|seg:SEG|Add0~0         ; |cnt12|seg:SEG|Add0~0         ; out0             ;
+; |cnt12|seg:SEG|Add0~1         ; |cnt12|seg:SEG|Add0~1         ; out0             ;
+; |cnt12|seg:SEG|Add0~2         ; |cnt12|seg:SEG|Add0~2         ; out0             ;
+; |cnt12|cnt:CNT|Add0~0         ; |cnt12|cnt:CNT|Add0~0         ; out0             ;
+; |cnt12|cnt:CNT|Add0~1         ; |cnt12|cnt:CNT|Add0~1         ; out0             ;
+; |cnt12|cnt:CNT|Add0~2         ; |cnt12|cnt:CNT|Add0~2         ; out0             ;
+; |cnt12|cnt:CNT|Add0~3         ; |cnt12|cnt:CNT|Add0~3         ; out0             ;
+; |cnt12|cnt:CNT|Add0~4         ; |cnt12|cnt:CNT|Add0~4         ; out0             ;
+; |cnt12|divi:DIVI|Add0~0       ; |cnt12|divi:DIVI|Add0~0       ; out0             ;
+; |cnt12|divi:DIVI|Add0~1       ; |cnt12|divi:DIVI|Add0~1       ; out0             ;
+; |cnt12|divi:DIVI|Add0~2       ; |cnt12|divi:DIVI|Add0~2       ; out0             ;
+; |cnt12|cnt:CNT|Equal0~0       ; |cnt12|cnt:CNT|Equal0~0       ; out0             ;
+; |cnt12|divi:DIVI|Equal0~0     ; |cnt12|divi:DIVI|Equal0~0     ; out0             ;
++-------------------------------+-------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                           ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |cnt12|rst                     ; |cnt12|rst                     ; out              ;
+; |cnt12|en                      ; |cnt12|en                      ; out              ;
+; |cnt12|dp                      ; |cnt12|dp                      ; pin_out          ;
+; |cnt12|count                   ; |cnt12|count                   ; pin_out          ;
+; |cnt12|divi:DIVI|count_reg~0   ; |cnt12|divi:DIVI|count_reg~0   ; out              ;
+; |cnt12|divi:DIVI|count_reg~1   ; |cnt12|divi:DIVI|count_reg~1   ; out              ;
+; |cnt12|divi:DIVI|count_reg~2   ; |cnt12|divi:DIVI|count_reg~2   ; out              ;
+; |cnt12|divi:DIVI|count_reg~3   ; |cnt12|divi:DIVI|count_reg~3   ; out              ;
+; |cnt12|divi:DIVI|count_reg~4   ; |cnt12|divi:DIVI|count_reg~4   ; out              ;
+; |cnt12|divi:DIVI|count_reg~5   ; |cnt12|divi:DIVI|count_reg~5   ; out              ;
+; |cnt12|divi:DIVI|count_reg~6   ; |cnt12|divi:DIVI|count_reg~6   ; out              ;
+; |cnt12|divi:DIVI|count_reg~7   ; |cnt12|divi:DIVI|count_reg~7   ; out              ;
+; |cnt12|divi:DIVI|count_reg~8   ; |cnt12|divi:DIVI|count_reg~8   ; out              ;
+; |cnt12|divi:DIVI|count_reg~9   ; |cnt12|divi:DIVI|count_reg~9   ; out              ;
+; |cnt12|divi:DIVI|count_reg~10  ; |cnt12|divi:DIVI|count_reg~10  ; out              ;
+; |cnt12|divi:DIVI|count_reg~11  ; |cnt12|divi:DIVI|count_reg~11  ; out              ;
+; |cnt12|divi:DIVI|count_reg~12  ; |cnt12|divi:DIVI|count_reg~12  ; out              ;
+; |cnt12|divi:DIVI|count_reg~13  ; |cnt12|divi:DIVI|count_reg~13  ; out              ;
+; |cnt12|divi:DIVI|count_reg~14  ; |cnt12|divi:DIVI|count_reg~14  ; out              ;
+; |cnt12|divi:DIVI|count_reg~15  ; |cnt12|divi:DIVI|count_reg~15  ; out              ;
+; |cnt12|divi:DIVI|count_reg~16  ; |cnt12|divi:DIVI|count_reg~16  ; out              ;
+; |cnt12|divi:DIVI|count_reg~17  ; |cnt12|divi:DIVI|count_reg~17  ; out              ;
+; |cnt12|divi:DIVI|count_reg~18  ; |cnt12|divi:DIVI|count_reg~18  ; out              ;
+; |cnt12|divi:DIVI|count_reg~19  ; |cnt12|divi:DIVI|count_reg~19  ; out              ;
+; |cnt12|divi:DIVI|count_reg~20  ; |cnt12|divi:DIVI|count_reg~20  ; out              ;
+; |cnt12|divi:DIVI|count_reg~21  ; |cnt12|divi:DIVI|count_reg~21  ; out              ;
+; |cnt12|divi:DIVI|count_reg~22  ; |cnt12|divi:DIVI|count_reg~22  ; out              ;
+; |cnt12|divi:DIVI|count_reg~23  ; |cnt12|divi:DIVI|count_reg~23  ; out              ;
+; |cnt12|divi:DIVI|count_reg~24  ; |cnt12|divi:DIVI|count_reg~24  ; out              ;
+; |cnt12|divi:DIVI|count_reg~25  ; |cnt12|divi:DIVI|count_reg~25  ; out              ;
+; |cnt12|divi:DIVI|count_reg~26  ; |cnt12|divi:DIVI|count_reg~26  ; out              ;
+; |cnt12|divi:DIVI|count_reg~27  ; |cnt12|divi:DIVI|count_reg~27  ; out              ;
+; |cnt12|divi:DIVI|count_reg~28  ; |cnt12|divi:DIVI|count_reg~28  ; out              ;
+; |cnt12|divi:DIVI|count_reg[3]  ; |cnt12|divi:DIVI|count_reg[3]  ; regout           ;
+; |cnt12|divi:DIVI|count_reg[4]  ; |cnt12|divi:DIVI|count_reg[4]  ; regout           ;
+; |cnt12|divi:DIVI|count_reg[5]  ; |cnt12|divi:DIVI|count_reg[5]  ; regout           ;
+; |cnt12|divi:DIVI|count_reg[6]  ; |cnt12|divi:DIVI|count_reg[6]  ; regout           ;
+; |cnt12|divi:DIVI|count_reg[7]  ; |cnt12|divi:DIVI|count_reg[7]  ; regout           ;
+; |cnt12|divi:DIVI|count_reg[8]  ; |cnt12|divi:DIVI|count_reg[8]  ; regout           ;
+; |cnt12|divi:DIVI|count_reg[9]  ; |cnt12|divi:DIVI|count_reg[9]  ; regout           ;
+; |cnt12|divi:DIVI|count_reg[10] ; |cnt12|divi:DIVI|count_reg[10] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[11] ; |cnt12|divi:DIVI|count_reg[11] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[12] ; |cnt12|divi:DIVI|count_reg[12] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[13] ; |cnt12|divi:DIVI|count_reg[13] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[14] ; |cnt12|divi:DIVI|count_reg[14] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[15] ; |cnt12|divi:DIVI|count_reg[15] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[16] ; |cnt12|divi:DIVI|count_reg[16] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[17] ; |cnt12|divi:DIVI|count_reg[17] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[18] ; |cnt12|divi:DIVI|count_reg[18] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[19] ; |cnt12|divi:DIVI|count_reg[19] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[20] ; |cnt12|divi:DIVI|count_reg[20] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[21] ; |cnt12|divi:DIVI|count_reg[21] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[22] ; |cnt12|divi:DIVI|count_reg[22] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[23] ; |cnt12|divi:DIVI|count_reg[23] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[24] ; |cnt12|divi:DIVI|count_reg[24] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[25] ; |cnt12|divi:DIVI|count_reg[25] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[26] ; |cnt12|divi:DIVI|count_reg[26] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[27] ; |cnt12|divi:DIVI|count_reg[27] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[28] ; |cnt12|divi:DIVI|count_reg[28] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[29] ; |cnt12|divi:DIVI|count_reg[29] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[30] ; |cnt12|divi:DIVI|count_reg[30] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[31] ; |cnt12|divi:DIVI|count_reg[31] ; regout           ;
+; |cnt12|seg:SEG|Decoder1~11     ; |cnt12|seg:SEG|Decoder1~11     ; out              ;
+; |cnt12|seg:SEG|Decoder1~12     ; |cnt12|seg:SEG|Decoder1~12     ; out              ;
+; |cnt12|seg:SEG|Decoder1~13     ; |cnt12|seg:SEG|Decoder1~13     ; out              ;
+; |cnt12|seg:SEG|Decoder1~14     ; |cnt12|seg:SEG|Decoder1~14     ; out              ;
+; |cnt12|divi:DIVI|Add0~3        ; |cnt12|divi:DIVI|Add0~3        ; out0             ;
+; |cnt12|divi:DIVI|Add0~4        ; |cnt12|divi:DIVI|Add0~4        ; out0             ;
+; |cnt12|divi:DIVI|Add0~5        ; |cnt12|divi:DIVI|Add0~5        ; out0             ;
+; |cnt12|divi:DIVI|Add0~6        ; |cnt12|divi:DIVI|Add0~6        ; out0             ;
+; |cnt12|divi:DIVI|Add0~7        ; |cnt12|divi:DIVI|Add0~7        ; out0             ;
+; |cnt12|divi:DIVI|Add0~8        ; |cnt12|divi:DIVI|Add0~8        ; out0             ;
+; |cnt12|divi:DIVI|Add0~9        ; |cnt12|divi:DIVI|Add0~9        ; out0             ;
+; |cnt12|divi:DIVI|Add0~10       ; |cnt12|divi:DIVI|Add0~10       ; out0             ;
+; |cnt12|divi:DIVI|Add0~11       ; |cnt12|divi:DIVI|Add0~11       ; out0             ;
+; |cnt12|divi:DIVI|Add0~12       ; |cnt12|divi:DIVI|Add0~12       ; out0             ;
+; |cnt12|divi:DIVI|Add0~13       ; |cnt12|divi:DIVI|Add0~13       ; out0             ;
+; |cnt12|divi:DIVI|Add0~14       ; |cnt12|divi:DIVI|Add0~14       ; out0             ;
+; |cnt12|divi:DIVI|Add0~15       ; |cnt12|divi:DIVI|Add0~15       ; out0             ;
+; |cnt12|divi:DIVI|Add0~16       ; |cnt12|divi:DIVI|Add0~16       ; out0             ;
+; |cnt12|divi:DIVI|Add0~17       ; |cnt12|divi:DIVI|Add0~17       ; out0             ;
+; |cnt12|divi:DIVI|Add0~18       ; |cnt12|divi:DIVI|Add0~18       ; out0             ;
+; |cnt12|divi:DIVI|Add0~19       ; |cnt12|divi:DIVI|Add0~19       ; out0             ;
+; |cnt12|divi:DIVI|Add0~20       ; |cnt12|divi:DIVI|Add0~20       ; out0             ;
+; |cnt12|divi:DIVI|Add0~21       ; |cnt12|divi:DIVI|Add0~21       ; out0             ;
+; |cnt12|divi:DIVI|Add0~22       ; |cnt12|divi:DIVI|Add0~22       ; out0             ;
+; |cnt12|divi:DIVI|Add0~23       ; |cnt12|divi:DIVI|Add0~23       ; out0             ;
+; |cnt12|divi:DIVI|Add0~24       ; |cnt12|divi:DIVI|Add0~24       ; out0             ;
+; |cnt12|divi:DIVI|Add0~25       ; |cnt12|divi:DIVI|Add0~25       ; out0             ;
+; |cnt12|divi:DIVI|Add0~26       ; |cnt12|divi:DIVI|Add0~26       ; out0             ;
+; |cnt12|divi:DIVI|Add0~27       ; |cnt12|divi:DIVI|Add0~27       ; out0             ;
+; |cnt12|divi:DIVI|Add0~28       ; |cnt12|divi:DIVI|Add0~28       ; out0             ;
+; |cnt12|divi:DIVI|Add0~29       ; |cnt12|divi:DIVI|Add0~29       ; out0             ;
+; |cnt12|divi:DIVI|Add0~30       ; |cnt12|divi:DIVI|Add0~30       ; out0             ;
+; |cnt12|divi:DIVI|Add0~31       ; |cnt12|divi:DIVI|Add0~31       ; out0             ;
+; |cnt12|divi:DIVI|Add0~32       ; |cnt12|divi:DIVI|Add0~32       ; out0             ;
+; |cnt12|divi:DIVI|Add0~33       ; |cnt12|divi:DIVI|Add0~33       ; out0             ;
+; |cnt12|divi:DIVI|Add0~34       ; |cnt12|divi:DIVI|Add0~34       ; out0             ;
+; |cnt12|divi:DIVI|Add0~35       ; |cnt12|divi:DIVI|Add0~35       ; out0             ;
+; |cnt12|divi:DIVI|Add0~36       ; |cnt12|divi:DIVI|Add0~36       ; out0             ;
+; |cnt12|divi:DIVI|Add0~37       ; |cnt12|divi:DIVI|Add0~37       ; out0             ;
+; |cnt12|divi:DIVI|Add0~38       ; |cnt12|divi:DIVI|Add0~38       ; out0             ;
+; |cnt12|divi:DIVI|Add0~39       ; |cnt12|divi:DIVI|Add0~39       ; out0             ;
+; |cnt12|divi:DIVI|Add0~40       ; |cnt12|divi:DIVI|Add0~40       ; out0             ;
+; |cnt12|divi:DIVI|Add0~41       ; |cnt12|divi:DIVI|Add0~41       ; out0             ;
+; |cnt12|divi:DIVI|Add0~42       ; |cnt12|divi:DIVI|Add0~42       ; out0             ;
+; |cnt12|divi:DIVI|Add0~43       ; |cnt12|divi:DIVI|Add0~43       ; out0             ;
+; |cnt12|divi:DIVI|Add0~44       ; |cnt12|divi:DIVI|Add0~44       ; out0             ;
+; |cnt12|divi:DIVI|Add0~45       ; |cnt12|divi:DIVI|Add0~45       ; out0             ;
+; |cnt12|divi:DIVI|Add0~46       ; |cnt12|divi:DIVI|Add0~46       ; out0             ;
+; |cnt12|divi:DIVI|Add0~47       ; |cnt12|divi:DIVI|Add0~47       ; out0             ;
+; |cnt12|divi:DIVI|Add0~48       ; |cnt12|divi:DIVI|Add0~48       ; out0             ;
+; |cnt12|divi:DIVI|Add0~49       ; |cnt12|divi:DIVI|Add0~49       ; out0             ;
+; |cnt12|divi:DIVI|Add0~50       ; |cnt12|divi:DIVI|Add0~50       ; out0             ;
+; |cnt12|divi:DIVI|Add0~51       ; |cnt12|divi:DIVI|Add0~51       ; out0             ;
+; |cnt12|divi:DIVI|Add0~52       ; |cnt12|divi:DIVI|Add0~52       ; out0             ;
+; |cnt12|divi:DIVI|Add0~53       ; |cnt12|divi:DIVI|Add0~53       ; out0             ;
+; |cnt12|divi:DIVI|Add0~54       ; |cnt12|divi:DIVI|Add0~54       ; out0             ;
+; |cnt12|divi:DIVI|Add0~55       ; |cnt12|divi:DIVI|Add0~55       ; out0             ;
+; |cnt12|divi:DIVI|Add0~56       ; |cnt12|divi:DIVI|Add0~56       ; out0             ;
+; |cnt12|divi:DIVI|Add0~57       ; |cnt12|divi:DIVI|Add0~57       ; out0             ;
+; |cnt12|divi:DIVI|Add0~58       ; |cnt12|divi:DIVI|Add0~58       ; out0             ;
+; |cnt12|divi:DIVI|Add0~59       ; |cnt12|divi:DIVI|Add0~59       ; out0             ;
+; |cnt12|divi:DIVI|Add0~60       ; |cnt12|divi:DIVI|Add0~60       ; out0             ;
++--------------------------------+--------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                           ;
++--------------------------------+--------------------------------+------------------+
+; Node Name                      ; Output Port Name               ; Output Port Type ;
++--------------------------------+--------------------------------+------------------+
+; |cnt12|rst                     ; |cnt12|rst                     ; out              ;
+; |cnt12|en                      ; |cnt12|en                      ; out              ;
+; |cnt12|dp                      ; |cnt12|dp                      ; pin_out          ;
+; |cnt12|cnt:CNT|count           ; |cnt12|cnt:CNT|count           ; regout           ;
+; |cnt12|divi:DIVI|count_reg~0   ; |cnt12|divi:DIVI|count_reg~0   ; out              ;
+; |cnt12|divi:DIVI|count_reg~1   ; |cnt12|divi:DIVI|count_reg~1   ; out              ;
+; |cnt12|divi:DIVI|count_reg~2   ; |cnt12|divi:DIVI|count_reg~2   ; out              ;
+; |cnt12|divi:DIVI|count_reg~3   ; |cnt12|divi:DIVI|count_reg~3   ; out              ;
+; |cnt12|divi:DIVI|count_reg~4   ; |cnt12|divi:DIVI|count_reg~4   ; out              ;
+; |cnt12|divi:DIVI|count_reg~5   ; |cnt12|divi:DIVI|count_reg~5   ; out              ;
+; |cnt12|divi:DIVI|count_reg~6   ; |cnt12|divi:DIVI|count_reg~6   ; out              ;
+; |cnt12|divi:DIVI|count_reg~7   ; |cnt12|divi:DIVI|count_reg~7   ; out              ;
+; |cnt12|divi:DIVI|count_reg~8   ; |cnt12|divi:DIVI|count_reg~8   ; out              ;
+; |cnt12|divi:DIVI|count_reg~9   ; |cnt12|divi:DIVI|count_reg~9   ; out              ;
+; |cnt12|divi:DIVI|count_reg~10  ; |cnt12|divi:DIVI|count_reg~10  ; out              ;
+; |cnt12|divi:DIVI|count_reg~11  ; |cnt12|divi:DIVI|count_reg~11  ; out              ;
+; |cnt12|divi:DIVI|count_reg~12  ; |cnt12|divi:DIVI|count_reg~12  ; out              ;
+; |cnt12|divi:DIVI|count_reg~13  ; |cnt12|divi:DIVI|count_reg~13  ; out              ;
+; |cnt12|divi:DIVI|count_reg~14  ; |cnt12|divi:DIVI|count_reg~14  ; out              ;
+; |cnt12|divi:DIVI|count_reg~15  ; |cnt12|divi:DIVI|count_reg~15  ; out              ;
+; |cnt12|divi:DIVI|count_reg~16  ; |cnt12|divi:DIVI|count_reg~16  ; out              ;
+; |cnt12|divi:DIVI|count_reg~17  ; |cnt12|divi:DIVI|count_reg~17  ; out              ;
+; |cnt12|divi:DIVI|count_reg~18  ; |cnt12|divi:DIVI|count_reg~18  ; out              ;
+; |cnt12|divi:DIVI|count_reg~19  ; |cnt12|divi:DIVI|count_reg~19  ; out              ;
+; |cnt12|divi:DIVI|count_reg~20  ; |cnt12|divi:DIVI|count_reg~20  ; out              ;
+; |cnt12|divi:DIVI|count_reg~21  ; |cnt12|divi:DIVI|count_reg~21  ; out              ;
+; |cnt12|divi:DIVI|count_reg~22  ; |cnt12|divi:DIVI|count_reg~22  ; out              ;
+; |cnt12|divi:DIVI|count_reg~23  ; |cnt12|divi:DIVI|count_reg~23  ; out              ;
+; |cnt12|divi:DIVI|count_reg~24  ; |cnt12|divi:DIVI|count_reg~24  ; out              ;
+; |cnt12|divi:DIVI|count_reg~25  ; |cnt12|divi:DIVI|count_reg~25  ; out              ;
+; |cnt12|divi:DIVI|count_reg~26  ; |cnt12|divi:DIVI|count_reg~26  ; out              ;
+; |cnt12|divi:DIVI|count_reg~27  ; |cnt12|divi:DIVI|count_reg~27  ; out              ;
+; |cnt12|divi:DIVI|count_reg~28  ; |cnt12|divi:DIVI|count_reg~28  ; out              ;
+; |cnt12|divi:DIVI|count_reg[3]  ; |cnt12|divi:DIVI|count_reg[3]  ; regout           ;
+; |cnt12|divi:DIVI|count_reg[4]  ; |cnt12|divi:DIVI|count_reg[4]  ; regout           ;
+; |cnt12|divi:DIVI|count_reg[5]  ; |cnt12|divi:DIVI|count_reg[5]  ; regout           ;
+; |cnt12|divi:DIVI|count_reg[6]  ; |cnt12|divi:DIVI|count_reg[6]  ; regout           ;
+; |cnt12|divi:DIVI|count_reg[7]  ; |cnt12|divi:DIVI|count_reg[7]  ; regout           ;
+; |cnt12|divi:DIVI|count_reg[8]  ; |cnt12|divi:DIVI|count_reg[8]  ; regout           ;
+; |cnt12|divi:DIVI|count_reg[9]  ; |cnt12|divi:DIVI|count_reg[9]  ; regout           ;
+; |cnt12|divi:DIVI|count_reg[10] ; |cnt12|divi:DIVI|count_reg[10] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[11] ; |cnt12|divi:DIVI|count_reg[11] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[12] ; |cnt12|divi:DIVI|count_reg[12] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[13] ; |cnt12|divi:DIVI|count_reg[13] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[14] ; |cnt12|divi:DIVI|count_reg[14] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[15] ; |cnt12|divi:DIVI|count_reg[15] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[16] ; |cnt12|divi:DIVI|count_reg[16] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[17] ; |cnt12|divi:DIVI|count_reg[17] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[18] ; |cnt12|divi:DIVI|count_reg[18] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[19] ; |cnt12|divi:DIVI|count_reg[19] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[20] ; |cnt12|divi:DIVI|count_reg[20] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[21] ; |cnt12|divi:DIVI|count_reg[21] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[22] ; |cnt12|divi:DIVI|count_reg[22] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[23] ; |cnt12|divi:DIVI|count_reg[23] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[24] ; |cnt12|divi:DIVI|count_reg[24] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[25] ; |cnt12|divi:DIVI|count_reg[25] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[26] ; |cnt12|divi:DIVI|count_reg[26] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[27] ; |cnt12|divi:DIVI|count_reg[27] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[28] ; |cnt12|divi:DIVI|count_reg[28] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[29] ; |cnt12|divi:DIVI|count_reg[29] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[30] ; |cnt12|divi:DIVI|count_reg[30] ; regout           ;
+; |cnt12|divi:DIVI|count_reg[31] ; |cnt12|divi:DIVI|count_reg[31] ; regout           ;
+; |cnt12|seg:SEG|Decoder1~11     ; |cnt12|seg:SEG|Decoder1~11     ; out              ;
+; |cnt12|seg:SEG|Decoder1~12     ; |cnt12|seg:SEG|Decoder1~12     ; out              ;
+; |cnt12|seg:SEG|Decoder1~13     ; |cnt12|seg:SEG|Decoder1~13     ; out              ;
+; |cnt12|seg:SEG|Decoder1~14     ; |cnt12|seg:SEG|Decoder1~14     ; out              ;
+; |cnt12|divi:DIVI|Add0~3        ; |cnt12|divi:DIVI|Add0~3        ; out0             ;
+; |cnt12|divi:DIVI|Add0~4        ; |cnt12|divi:DIVI|Add0~4        ; out0             ;
+; |cnt12|divi:DIVI|Add0~5        ; |cnt12|divi:DIVI|Add0~5        ; out0             ;
+; |cnt12|divi:DIVI|Add0~6        ; |cnt12|divi:DIVI|Add0~6        ; out0             ;
+; |cnt12|divi:DIVI|Add0~7        ; |cnt12|divi:DIVI|Add0~7        ; out0             ;
+; |cnt12|divi:DIVI|Add0~8        ; |cnt12|divi:DIVI|Add0~8        ; out0             ;
+; |cnt12|divi:DIVI|Add0~9        ; |cnt12|divi:DIVI|Add0~9        ; out0             ;
+; |cnt12|divi:DIVI|Add0~10       ; |cnt12|divi:DIVI|Add0~10       ; out0             ;
+; |cnt12|divi:DIVI|Add0~11       ; |cnt12|divi:DIVI|Add0~11       ; out0             ;
+; |cnt12|divi:DIVI|Add0~12       ; |cnt12|divi:DIVI|Add0~12       ; out0             ;
+; |cnt12|divi:DIVI|Add0~13       ; |cnt12|divi:DIVI|Add0~13       ; out0             ;
+; |cnt12|divi:DIVI|Add0~14       ; |cnt12|divi:DIVI|Add0~14       ; out0             ;
+; |cnt12|divi:DIVI|Add0~15       ; |cnt12|divi:DIVI|Add0~15       ; out0             ;
+; |cnt12|divi:DIVI|Add0~16       ; |cnt12|divi:DIVI|Add0~16       ; out0             ;
+; |cnt12|divi:DIVI|Add0~17       ; |cnt12|divi:DIVI|Add0~17       ; out0             ;
+; |cnt12|divi:DIVI|Add0~18       ; |cnt12|divi:DIVI|Add0~18       ; out0             ;
+; |cnt12|divi:DIVI|Add0~19       ; |cnt12|divi:DIVI|Add0~19       ; out0             ;
+; |cnt12|divi:DIVI|Add0~20       ; |cnt12|divi:DIVI|Add0~20       ; out0             ;
+; |cnt12|divi:DIVI|Add0~21       ; |cnt12|divi:DIVI|Add0~21       ; out0             ;
+; |cnt12|divi:DIVI|Add0~22       ; |cnt12|divi:DIVI|Add0~22       ; out0             ;
+; |cnt12|divi:DIVI|Add0~23       ; |cnt12|divi:DIVI|Add0~23       ; out0             ;
+; |cnt12|divi:DIVI|Add0~24       ; |cnt12|divi:DIVI|Add0~24       ; out0             ;
+; |cnt12|divi:DIVI|Add0~25       ; |cnt12|divi:DIVI|Add0~25       ; out0             ;
+; |cnt12|divi:DIVI|Add0~26       ; |cnt12|divi:DIVI|Add0~26       ; out0             ;
+; |cnt12|divi:DIVI|Add0~27       ; |cnt12|divi:DIVI|Add0~27       ; out0             ;
+; |cnt12|divi:DIVI|Add0~28       ; |cnt12|divi:DIVI|Add0~28       ; out0             ;
+; |cnt12|divi:DIVI|Add0~29       ; |cnt12|divi:DIVI|Add0~29       ; out0             ;
+; |cnt12|divi:DIVI|Add0~30       ; |cnt12|divi:DIVI|Add0~30       ; out0             ;
+; |cnt12|divi:DIVI|Add0~31       ; |cnt12|divi:DIVI|Add0~31       ; out0             ;
+; |cnt12|divi:DIVI|Add0~32       ; |cnt12|divi:DIVI|Add0~32       ; out0             ;
+; |cnt12|divi:DIVI|Add0~33       ; |cnt12|divi:DIVI|Add0~33       ; out0             ;
+; |cnt12|divi:DIVI|Add0~34       ; |cnt12|divi:DIVI|Add0~34       ; out0             ;
+; |cnt12|divi:DIVI|Add0~35       ; |cnt12|divi:DIVI|Add0~35       ; out0             ;
+; |cnt12|divi:DIVI|Add0~36       ; |cnt12|divi:DIVI|Add0~36       ; out0             ;
+; |cnt12|divi:DIVI|Add0~37       ; |cnt12|divi:DIVI|Add0~37       ; out0             ;
+; |cnt12|divi:DIVI|Add0~38       ; |cnt12|divi:DIVI|Add0~38       ; out0             ;
+; |cnt12|divi:DIVI|Add0~39       ; |cnt12|divi:DIVI|Add0~39       ; out0             ;
+; |cnt12|divi:DIVI|Add0~40       ; |cnt12|divi:DIVI|Add0~40       ; out0             ;
+; |cnt12|divi:DIVI|Add0~41       ; |cnt12|divi:DIVI|Add0~41       ; out0             ;
+; |cnt12|divi:DIVI|Add0~42       ; |cnt12|divi:DIVI|Add0~42       ; out0             ;
+; |cnt12|divi:DIVI|Add0~43       ; |cnt12|divi:DIVI|Add0~43       ; out0             ;
+; |cnt12|divi:DIVI|Add0~44       ; |cnt12|divi:DIVI|Add0~44       ; out0             ;
+; |cnt12|divi:DIVI|Add0~45       ; |cnt12|divi:DIVI|Add0~45       ; out0             ;
+; |cnt12|divi:DIVI|Add0~46       ; |cnt12|divi:DIVI|Add0~46       ; out0             ;
+; |cnt12|divi:DIVI|Add0~47       ; |cnt12|divi:DIVI|Add0~47       ; out0             ;
+; |cnt12|divi:DIVI|Add0~48       ; |cnt12|divi:DIVI|Add0~48       ; out0             ;
+; |cnt12|divi:DIVI|Add0~49       ; |cnt12|divi:DIVI|Add0~49       ; out0             ;
+; |cnt12|divi:DIVI|Add0~50       ; |cnt12|divi:DIVI|Add0~50       ; out0             ;
+; |cnt12|divi:DIVI|Add0~51       ; |cnt12|divi:DIVI|Add0~51       ; out0             ;
+; |cnt12|divi:DIVI|Add0~52       ; |cnt12|divi:DIVI|Add0~52       ; out0             ;
+; |cnt12|divi:DIVI|Add0~53       ; |cnt12|divi:DIVI|Add0~53       ; out0             ;
+; |cnt12|divi:DIVI|Add0~54       ; |cnt12|divi:DIVI|Add0~54       ; out0             ;
+; |cnt12|divi:DIVI|Add0~55       ; |cnt12|divi:DIVI|Add0~55       ; out0             ;
+; |cnt12|divi:DIVI|Add0~56       ; |cnt12|divi:DIVI|Add0~56       ; out0             ;
+; |cnt12|divi:DIVI|Add0~57       ; |cnt12|divi:DIVI|Add0~57       ; out0             ;
+; |cnt12|divi:DIVI|Add0~58       ; |cnt12|divi:DIVI|Add0~58       ; out0             ;
+; |cnt12|divi:DIVI|Add0~59       ; |cnt12|divi:DIVI|Add0~59       ; out0             ;
+; |cnt12|divi:DIVI|Add0~60       ; |cnt12|divi:DIVI|Add0~60       ; out0             ;
++--------------------------------+--------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Thu Oct 14 22:37:14 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off cnt12 -c cnt12
+Info: Using vector source file "D:/大学/作业/数字系统实践/cnt12/cnt12.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      40.48 %
+Info: Number of transitions in simulation is 11875
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 156 megabytes
+    Info: Processing ended: Thu Oct 14 22:37:14 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

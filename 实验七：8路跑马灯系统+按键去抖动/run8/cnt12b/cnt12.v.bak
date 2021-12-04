@@ -1,0 +1,36 @@
+module cnt12(clk,rst,en,cq,cout);
+input clk,rst,en;
+output reg cout;   
+output wire [3:0] cq;
+reg [3:0] Q1;
+assign cq=Q1;
+always @(posedge clk or posedge rst)
+begin
+	if(rst) 
+	begin
+	Q1<=4'd0;
+	end
+		else if(en)
+		begin
+			if(Q1<11) 
+			begin
+			Q1<=Q1+4'd1;
+			end
+				else
+				begin
+		 Q1<=4'd0;
+		 end
+		end
+end
+always @(Q1)
+begin
+	if(Q1==4'h11)
+	begin
+	 cout = 1'b1;
+	 end
+	else 
+		begin
+		cout = 1'b0;
+		end
+end
+endmodule

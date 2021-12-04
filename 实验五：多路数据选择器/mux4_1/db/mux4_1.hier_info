@@ -1,0 +1,29 @@
+|mux4_1
+A[0] => dataout[0]~5.DATAB
+A[1] => dataout[1]~7.DATAB
+B[0] => dataout[0]~4.DATAB
+B[1] => dataout[1]~2.DATAB
+C[0] => dataout[0]~3.DATAB
+C[1] => dataout[1]~0.DATAB
+D[0] => dataout[0]~3.DATAA
+D[1] => dataout[1]~0.DATAA
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN0
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN0
+sel[1] => Equal3.IN1
+dataout[0] <= dataout[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+dataout[1] <= dataout[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ds <= <GND>
+seg7[0] <= seg7[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg7[1] <= <VCC>
+seg7[2] <= seg7[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg7[3] <= seg7[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg7[4] <= seg7[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg7[5] <= seg7[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+seg7[6] <= seg7[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

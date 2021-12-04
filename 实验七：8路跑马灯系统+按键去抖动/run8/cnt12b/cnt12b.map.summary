@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Oct 22 01:09:44 2021
+Quartus II Version : 9.0 Build 132 02/25/2009 SJ Full Version
+Revision Name : cnt12b
+Top-level Entity Name : CNT12B
+Family : Cyclone III
+Total logic elements : 139
+    Total combinational functions : 138
+    Dedicated logic registers : 81
+Total registers : 81
+Total pins : 24
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

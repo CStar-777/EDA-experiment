@@ -1,0 +1,4 @@
+Warning (10268): Verilog HDL information at seg.v(28): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at seg.v(38): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at cnt.v(13): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at divi.v(13): always construct contains both blocking and non-blocking assignments

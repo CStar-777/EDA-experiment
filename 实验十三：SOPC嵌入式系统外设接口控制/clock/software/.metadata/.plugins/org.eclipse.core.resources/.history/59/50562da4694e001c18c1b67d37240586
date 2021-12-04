@@ -1,0 +1,43 @@
+#include "system.h"
+#include "altera_avalon_pio_regs.h"
+#include "alt_types.h"
+
+int main (void) __attribute__ ((weak, alias ("alt_main")));
+void delay (void)
+{
+    alt_u32 i=0, j=0;
+    while (i<200000)
+    i++;
+    while (j<200000)
+    j++;
+    return;
+}
+int alt_main (void)
+{
+    alt_u16 led = 0x2;
+    alt_u8 dir = 0;
+    /*
+    * Infinitely shift a variable with one bit set back and forth, and write
+    * it to the LED PIO. Software loop provides delay element.
+    */
+    while (1)
+    {
+        if (led & 0x81)
+        {
+        dir = (dir ^ 0x1);
+        }
+        if (dir)
+        {
+        led = led >> 1;
+        }
+        else
+        {
+        led = led << 1;
+    }
+    /*利用函数将led的值写到led_pio中，请同学们填写*/
+    IOWR_ALTERA_AVALON_PIO_DATA(LED_PIO_BASE, led) ;
+    
+    delay();
+    }
+    return 0;
+    }

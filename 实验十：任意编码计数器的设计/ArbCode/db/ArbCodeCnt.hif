@@ -1,0 +1,180 @@
+Version 9.0 Build 132 02/25/2009 SJ Full Version
+10
+854
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+seg
+# storage
+db|ArbCodeCnt.(1).cnf
+db|ArbCodeCnt.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+seg.v
+18aaa4c96267173ac4343abb648483
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+seg:inst2
+}
+# macro_sequence
+
+# end
+# entity
+fsm7
+# storage
+db|ArbCodeCnt.(2).cnf
+db|ArbCodeCnt.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+fsm7.v
+7fdfe267f139f1c42558a299527d7745
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+s1
+1
+PARAMETER_SIGNED_DEC
+USR
+s2
+2
+PARAMETER_SIGNED_DEC
+USR
+s3
+3
+PARAMETER_SIGNED_DEC
+USR
+s4
+4
+PARAMETER_SIGNED_DEC
+USR
+s5
+5
+PARAMETER_SIGNED_DEC
+USR
+s6
+6
+PARAMETER_SIGNED_DEC
+USR
+s7
+7
+PARAMETER_SIGNED_DEC
+USR
+}
+# hierarchies {
+fsm7:inst3
+}
+# macro_sequence
+
+# end
+# entity
+ArbCodeCnt
+# storage
+db|ArbCodeCnt.(0).cnf
+db|ArbCodeCnt.(0).cnf
+# case_insensitive
+# source_file
+ArbCodeCnt.bdf
+67dc65a473ea6a53979af424d685a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+divi_1hz
+# storage
+db|ArbCodeCnt.(3).cnf
+db|ArbCodeCnt.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+divi_1hz.v
+c3ee8f81dc719275f48189f2e65425
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+divi_1hz:inst
+}
+# macro_sequence
+
+# end
+# complete
+

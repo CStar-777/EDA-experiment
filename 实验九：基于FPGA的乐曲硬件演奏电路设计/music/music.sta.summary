@@ -1,0 +1,125 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 100C Model Setup 'speaker:inst3|PreCLK'
+Slack : -4.971
+TNS   : -52.286
+
+Type  : Slow 1200mV 100C Model Setup 'clk'
+Slack : -3.628
+TNS   : -73.444
+
+Type  : Slow 1200mV 100C Model Setup 'div:inst|clk4'
+Slack : -2.498
+TNS   : -24.155
+
+Type  : Slow 1200mV 100C Model Setup 'data_rom:inst4|romd1:u1|altsyncram:altsyncram_component|altsyncram_m6a1:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -1.876
+TNS   : -17.075
+
+Type  : Slow 1200mV 100C Model Setup 'speaker:inst3|FullSpeaker'
+Slack : 0.139
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'data_rom:inst4|romd1:u1|altsyncram:altsyncram_component|altsyncram_m6a1:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -3.322
+TNS   : -33.875
+
+Type  : Slow 1200mV 100C Model Hold 'clk'
+Slack : -0.045
+TNS   : -0.045
+
+Type  : Slow 1200mV 100C Model Hold 'speaker:inst3|FullSpeaker'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'speaker:inst3|PreCLK'
+Slack : 0.435
+TNS   : 0.000
+
+Type  : Slow 1200mV 100C Model Hold 'div:inst|clk4'
+Slack : 0.627
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Setup 'speaker:inst3|PreCLK'
+Slack : -4.346
+TNS   : -45.389
+
+Type  : Slow 1200mV -40C Model Setup 'clk'
+Slack : -3.162
+TNS   : -58.006
+
+Type  : Slow 1200mV -40C Model Setup 'div:inst|clk4'
+Slack : -2.110
+TNS   : -19.847
+
+Type  : Slow 1200mV -40C Model Setup 'data_rom:inst4|romd1:u1|altsyncram:altsyncram_component|altsyncram_m6a1:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -1.696
+TNS   : -14.981
+
+Type  : Slow 1200mV -40C Model Setup 'speaker:inst3|FullSpeaker'
+Slack : 0.252
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'data_rom:inst4|romd1:u1|altsyncram:altsyncram_component|altsyncram_m6a1:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -2.947
+TNS   : -30.218
+
+Type  : Slow 1200mV -40C Model Hold 'clk'
+Slack : -0.036
+TNS   : -0.036
+
+Type  : Slow 1200mV -40C Model Hold 'speaker:inst3|FullSpeaker'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'speaker:inst3|PreCLK'
+Slack : 0.385
+TNS   : 0.000
+
+Type  : Slow 1200mV -40C Model Hold 'div:inst|clk4'
+Slack : 0.571
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Setup 'speaker:inst3|PreCLK'
+Slack : -1.529
+TNS   : -15.132
+
+Type  : Fast 1200mV -40C Model Setup 'clk'
+Slack : -1.264
+TNS   : -17.814
+
+Type  : Fast 1200mV -40C Model Setup 'div:inst|clk4'
+Slack : -0.756
+TNS   : -4.788
+
+Type  : Fast 1200mV -40C Model Setup 'data_rom:inst4|romd1:u1|altsyncram:altsyncram_component|altsyncram_m6a1:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -0.391
+TNS   : -2.683
+
+Type  : Fast 1200mV -40C Model Setup 'speaker:inst3|FullSpeaker'
+Slack : 0.614
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'data_rom:inst4|romd1:u1|altsyncram:altsyncram_component|altsyncram_m6a1:auto_generated|ram_block1a0~porta_address_reg0'
+Slack : -1.620
+TNS   : -16.762
+
+Type  : Fast 1200mV -40C Model Hold 'clk'
+Slack : -0.141
+TNS   : -0.141
+
+Type  : Fast 1200mV -40C Model Hold 'speaker:inst3|FullSpeaker'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'speaker:inst3|PreCLK'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV -40C Model Hold 'div:inst|clk4'
+Slack : 0.257
+TNS   : 0.000
+
+------------------------------------------------------------

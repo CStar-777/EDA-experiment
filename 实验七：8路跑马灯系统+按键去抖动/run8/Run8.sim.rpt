@@ -1,0 +1,338 @@
+Simulator report for Run8
+Fri Oct 22 00:41:11 2021
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 111 nodes    ;
+; Simulation Coverage         ;      53.60 % ;
+; Total Number of Transitions ; 4694         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone III  ;
+; Device                      ; EP3C55F484I7 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; Run88.vwf  ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
+; Interconnect Delay Model Type                                                              ; Transport  ; Transport     ;
+; Cell Delay Model Type                                                                      ; Transport  ; Transport     ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      53.60 % ;
+; Total nodes checked                                 ; 111          ;
+; Total output ports checked                          ; 125          ;
+; Total output ports with complete 1/0-value coverage ; 67           ;
+; Total output ports with no 1/0-value coverage       ; 49           ;
+; Total output ports with no 1-value coverage         ; 52           ;
+; Total output ports with no 0-value coverage         ; 55           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                            ;
++------------------------------------------+------------------------------------------+------------------+
+; Node Name                                ; Output Port Name                         ; Output Port Type ;
++------------------------------------------+------------------------------------------+------------------+
+; |Run8|div_250hz:inst25|Add0~0            ; |Run8|div_250hz:inst25|Add0~0            ; combout          ;
+; |Run8|div_250hz:inst25|Add0~0            ; |Run8|div_250hz:inst25|Add0~1            ; cout             ;
+; |Run8|div_250hz:inst25|Add0~2            ; |Run8|div_250hz:inst25|Add0~2            ; combout          ;
+; |Run8|div_250hz:inst25|Add0~2            ; |Run8|div_250hz:inst25|Add0~3            ; cout             ;
+; |Run8|div_250hz:inst25|Add0~4            ; |Run8|div_250hz:inst25|Add0~4            ; combout          ;
+; |Run8|cnt8:inst|Q[0]                     ; |Run8|cnt8:inst|Q[0]                     ; q                ;
+; |Run8|cnt8:inst|Q[1]                     ; |Run8|cnt8:inst|Q[1]                     ; q                ;
+; |Run8|74138:inst5|15~1                   ; |Run8|74138:inst5|15~1                   ; combout          ;
+; |Run8|74138:inst5|15~2                   ; |Run8|74138:inst5|15~2                   ; combout          ;
+; |Run8|74138:inst5|15~3                   ; |Run8|74138:inst5|15~3                   ; combout          ;
+; |Run8|74138:inst5|15~5                   ; |Run8|74138:inst5|15~5                   ; combout          ;
+; |Run8|div_250hz:inst25|div_250hz         ; |Run8|div_250hz:inst25|div_250hz         ; q                ;
+; |Run8|dvf:inst24|divclk                  ; |Run8|dvf:inst24|divclk                  ; q                ;
+; |Run8|cnt8:inst|Q[2]~3                   ; |Run8|cnt8:inst|Q[2]~3                   ; combout          ;
+; |Run8|cnt8:inst|Q[1]~4                   ; |Run8|cnt8:inst|Q[1]~4                   ; combout          ;
+; |Run8|div_250hz:inst25|cnt[2]            ; |Run8|div_250hz:inst25|cnt[2]            ; q                ;
+; |Run8|div_250hz:inst25|cnt[0]            ; |Run8|div_250hz:inst25|cnt[0]            ; q                ;
+; |Run8|div_250hz:inst25|cnt[1]            ; |Run8|div_250hz:inst25|cnt[1]            ; q                ;
+; |Run8|div_250hz:inst25|Equal0~0          ; |Run8|div_250hz:inst25|Equal0~0          ; combout          ;
+; |Run8|div_250hz:inst25|Equal0~4          ; |Run8|div_250hz:inst25|Equal0~4          ; combout          ;
+; |Run8|div_250hz:inst25|div_250hz~0       ; |Run8|div_250hz:inst25|div_250hz~0       ; combout          ;
+; |Run8|dvf:inst24|cnt[2]                  ; |Run8|dvf:inst24|cnt[2]                  ; q                ;
+; |Run8|dvf:inst24|Equal0~0                ; |Run8|dvf:inst24|Equal0~0                ; combout          ;
+; |Run8|dvf:inst24|cnt[0]                  ; |Run8|dvf:inst24|cnt[0]                  ; q                ;
+; |Run8|dvf:inst24|Equal0~1                ; |Run8|dvf:inst24|Equal0~1                ; combout          ;
+; |Run8|dvf:inst24|cnt[1]                  ; |Run8|dvf:inst24|cnt[1]                  ; q                ;
+; |Run8|dvf:inst24|Equal0~2                ; |Run8|dvf:inst24|Equal0~2                ; combout          ;
+; |Run8|dvf:inst24|Equal0~3                ; |Run8|dvf:inst24|Equal0~3                ; combout          ;
+; |Run8|dvf:inst24|divclk~0                ; |Run8|dvf:inst24|divclk~0                ; combout          ;
+; |Run8|div_250hz:inst25|cnt~16            ; |Run8|div_250hz:inst25|cnt~16            ; combout          ;
+; |Run8|div_250hz:inst25|cnt~17            ; |Run8|div_250hz:inst25|cnt~17            ; combout          ;
+; |Run8|dvf:inst24|Add1~0                  ; |Run8|dvf:inst24|Add1~0                  ; combout          ;
+; |Run8|dvf:inst24|cnt~6                   ; |Run8|dvf:inst24|cnt~6                   ; combout          ;
+; |Run8|dvf:inst24|cnt~7                   ; |Run8|dvf:inst24|cnt~7                   ; combout          ;
+; |Run8|dvf:inst24|cnt~8                   ; |Run8|dvf:inst24|cnt~8                   ; combout          ;
+; |Run8|dvf:inst24|cnt~9                   ; |Run8|dvf:inst24|cnt~9                   ; combout          ;
+; |Run8|cnt8:inst|Q[0]~5                   ; |Run8|cnt8:inst|Q[0]~5                   ; combout          ;
+; |Run8|data_in[0]                         ; |Run8|data_in[0]                         ; padout           ;
+; |Run8|led2~output                        ; |Run8|led2~output                        ; o                ;
+; |Run8|led2                               ; |Run8|led2                               ; padout           ;
+; |Run8|led3~output                        ; |Run8|led3~output                        ; o                ;
+; |Run8|led3                               ; |Run8|led3                               ; padout           ;
+; |Run8|led4~output                        ; |Run8|led4~output                        ; o                ;
+; |Run8|led4                               ; |Run8|led4                               ; padout           ;
+; |Run8|led6~output                        ; |Run8|led6~output                        ; o                ;
+; |Run8|led6                               ; |Run8|led6                               ; padout           ;
+; |Run8|led9~output                        ; |Run8|led9~output                        ; o                ;
+; |Run8|led9                               ; |Run8|led9                               ; padout           ;
+; |Run8|led10~output                       ; |Run8|led10~output                       ; o                ;
+; |Run8|led10                              ; |Run8|led10                              ; padout           ;
+; |Run8|led11[1]~output                    ; |Run8|led11[1]~output                    ; o                ;
+; |Run8|led11[1]                           ; |Run8|led11[1]                           ; padout           ;
+; |Run8|led11[0]~output                    ; |Run8|led11[0]~output                    ; o                ;
+; |Run8|led11[0]                           ; |Run8|led11[0]                           ; padout           ;
+; |Run8|clk~input                          ; |Run8|clk~input                          ; o                ;
+; |Run8|clk                                ; |Run8|clk                                ; padout           ;
+; |Run8|data_in[3]~input                   ; |Run8|data_in[3]~input                   ; o                ;
+; |Run8|data_in[3]                         ; |Run8|data_in[3]                         ; padout           ;
+; |Run8|data_in[1]~input                   ; |Run8|data_in[1]~input                   ; o                ;
+; |Run8|data_in[1]                         ; |Run8|data_in[1]                         ; padout           ;
+; |Run8|data_in[2]~input                   ; |Run8|data_in[2]~input                   ; o                ;
+; |Run8|data_in[2]                         ; |Run8|data_in[2]                         ; padout           ;
+; |Run8|clk~inputclkctrl                   ; |Run8|clk~inputclkctrl                   ; outclk           ;
+; |Run8|div_250hz:inst25|div_250hz~clkctrl ; |Run8|div_250hz:inst25|div_250hz~clkctrl ; outclk           ;
+; |Run8|dvf:inst24|divclk~clkctrl          ; |Run8|dvf:inst24|divclk~clkctrl          ; outclk           ;
+; |Run8|div_250hz:inst25|div_250hz~feeder  ; |Run8|div_250hz:inst25|div_250hz~feeder  ; combout          ;
+; |Run8|dvf:inst24|divclk~feeder           ; |Run8|dvf:inst24|divclk~feeder           ; combout          ;
++------------------------------------------+------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                             ;
++---------------------------------+---------------------------------+------------------+
+; Node Name                       ; Output Port Name                ; Output Port Type ;
++---------------------------------+---------------------------------+------------------+
+; |Run8|div_250hz:inst25|Add0~4   ; |Run8|div_250hz:inst25|Add0~5   ; cout             ;
+; |Run8|div_250hz:inst25|Add0~6   ; |Run8|div_250hz:inst25|Add0~6   ; combout          ;
+; |Run8|div_250hz:inst25|Add0~6   ; |Run8|div_250hz:inst25|Add0~7   ; cout             ;
+; |Run8|div_250hz:inst25|Add0~8   ; |Run8|div_250hz:inst25|Add0~8   ; combout          ;
+; |Run8|div_250hz:inst25|Add0~8   ; |Run8|div_250hz:inst25|Add0~9   ; cout             ;
+; |Run8|div_250hz:inst25|Add0~10  ; |Run8|div_250hz:inst25|Add0~10  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~10  ; |Run8|div_250hz:inst25|Add0~11  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~12  ; |Run8|div_250hz:inst25|Add0~12  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~12  ; |Run8|div_250hz:inst25|Add0~13  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~14  ; |Run8|div_250hz:inst25|Add0~14  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~14  ; |Run8|div_250hz:inst25|Add0~15  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~16  ; |Run8|div_250hz:inst25|Add0~16  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~16  ; |Run8|div_250hz:inst25|Add0~17  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~18  ; |Run8|div_250hz:inst25|Add0~18  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~18  ; |Run8|div_250hz:inst25|Add0~19  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~20  ; |Run8|div_250hz:inst25|Add0~20  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~20  ; |Run8|div_250hz:inst25|Add0~21  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~22  ; |Run8|div_250hz:inst25|Add0~22  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~22  ; |Run8|div_250hz:inst25|Add0~23  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~24  ; |Run8|div_250hz:inst25|Add0~24  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~24  ; |Run8|div_250hz:inst25|Add0~25  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~26  ; |Run8|div_250hz:inst25|Add0~26  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~26  ; |Run8|div_250hz:inst25|Add0~27  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~28  ; |Run8|div_250hz:inst25|Add0~28  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~28  ; |Run8|div_250hz:inst25|Add0~29  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~30  ; |Run8|div_250hz:inst25|Add0~30  ; combout          ;
+; |Run8|74138:inst5|15~0          ; |Run8|74138:inst5|15~0          ; combout          ;
+; |Run8|74138:inst5|15~6          ; |Run8|74138:inst5|15~6          ; combout          ;
+; |Run8|74138:inst5|15~7          ; |Run8|74138:inst5|15~7          ; combout          ;
+; |Run8|div_250hz:inst25|cnt[3]   ; |Run8|div_250hz:inst25|cnt[3]   ; q                ;
+; |Run8|div_250hz:inst25|cnt[4]   ; |Run8|div_250hz:inst25|cnt[4]   ; q                ;
+; |Run8|div_250hz:inst25|cnt[5]   ; |Run8|div_250hz:inst25|cnt[5]   ; q                ;
+; |Run8|div_250hz:inst25|cnt[6]   ; |Run8|div_250hz:inst25|cnt[6]   ; q                ;
+; |Run8|div_250hz:inst25|cnt[7]   ; |Run8|div_250hz:inst25|cnt[7]   ; q                ;
+; |Run8|div_250hz:inst25|Equal0~1 ; |Run8|div_250hz:inst25|Equal0~1 ; combout          ;
+; |Run8|div_250hz:inst25|cnt[8]   ; |Run8|div_250hz:inst25|cnt[8]   ; q                ;
+; |Run8|div_250hz:inst25|cnt[9]   ; |Run8|div_250hz:inst25|cnt[9]   ; q                ;
+; |Run8|div_250hz:inst25|cnt[10]  ; |Run8|div_250hz:inst25|cnt[10]  ; q                ;
+; |Run8|div_250hz:inst25|cnt[11]  ; |Run8|div_250hz:inst25|cnt[11]  ; q                ;
+; |Run8|div_250hz:inst25|Equal0~2 ; |Run8|div_250hz:inst25|Equal0~2 ; combout          ;
+; |Run8|div_250hz:inst25|cnt[12]  ; |Run8|div_250hz:inst25|cnt[12]  ; q                ;
+; |Run8|div_250hz:inst25|cnt[13]  ; |Run8|div_250hz:inst25|cnt[13]  ; q                ;
+; |Run8|div_250hz:inst25|cnt[14]  ; |Run8|div_250hz:inst25|cnt[14]  ; q                ;
+; |Run8|div_250hz:inst25|cnt[15]  ; |Run8|div_250hz:inst25|cnt[15]  ; q                ;
+; |Run8|div_250hz:inst25|Equal0~3 ; |Run8|div_250hz:inst25|Equal0~3 ; combout          ;
+; |Run8|dvf:inst24|cnt[3]         ; |Run8|dvf:inst24|cnt[3]         ; q                ;
+; |Run8|led5~output               ; |Run8|led5~output               ; o                ;
+; |Run8|led5                      ; |Run8|led5                      ; padout           ;
+; |Run8|led7~output               ; |Run8|led7~output               ; o                ;
+; |Run8|led7                      ; |Run8|led7                      ; padout           ;
+; |Run8|led8~output               ; |Run8|led8~output               ; o                ;
+; |Run8|led8                      ; |Run8|led8                      ; padout           ;
++---------------------------------+---------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                             ;
++---------------------------------+---------------------------------+------------------+
+; Node Name                       ; Output Port Name                ; Output Port Type ;
++---------------------------------+---------------------------------+------------------+
+; |Run8|div_250hz:inst25|Add0~4   ; |Run8|div_250hz:inst25|Add0~5   ; cout             ;
+; |Run8|div_250hz:inst25|Add0~6   ; |Run8|div_250hz:inst25|Add0~6   ; combout          ;
+; |Run8|div_250hz:inst25|Add0~6   ; |Run8|div_250hz:inst25|Add0~7   ; cout             ;
+; |Run8|div_250hz:inst25|Add0~8   ; |Run8|div_250hz:inst25|Add0~8   ; combout          ;
+; |Run8|div_250hz:inst25|Add0~8   ; |Run8|div_250hz:inst25|Add0~9   ; cout             ;
+; |Run8|div_250hz:inst25|Add0~10  ; |Run8|div_250hz:inst25|Add0~10  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~10  ; |Run8|div_250hz:inst25|Add0~11  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~12  ; |Run8|div_250hz:inst25|Add0~12  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~12  ; |Run8|div_250hz:inst25|Add0~13  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~14  ; |Run8|div_250hz:inst25|Add0~14  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~14  ; |Run8|div_250hz:inst25|Add0~15  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~16  ; |Run8|div_250hz:inst25|Add0~16  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~16  ; |Run8|div_250hz:inst25|Add0~17  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~18  ; |Run8|div_250hz:inst25|Add0~18  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~18  ; |Run8|div_250hz:inst25|Add0~19  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~20  ; |Run8|div_250hz:inst25|Add0~20  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~20  ; |Run8|div_250hz:inst25|Add0~21  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~22  ; |Run8|div_250hz:inst25|Add0~22  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~22  ; |Run8|div_250hz:inst25|Add0~23  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~24  ; |Run8|div_250hz:inst25|Add0~24  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~24  ; |Run8|div_250hz:inst25|Add0~25  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~26  ; |Run8|div_250hz:inst25|Add0~26  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~26  ; |Run8|div_250hz:inst25|Add0~27  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~28  ; |Run8|div_250hz:inst25|Add0~28  ; combout          ;
+; |Run8|div_250hz:inst25|Add0~28  ; |Run8|div_250hz:inst25|Add0~29  ; cout             ;
+; |Run8|div_250hz:inst25|Add0~30  ; |Run8|div_250hz:inst25|Add0~30  ; combout          ;
+; |Run8|cnt8:inst|Q[2]            ; |Run8|cnt8:inst|Q[2]            ; q                ;
+; |Run8|74138:inst5|15~4          ; |Run8|74138:inst5|15~4          ; combout          ;
+; |Run8|74138:inst5|15~6          ; |Run8|74138:inst5|15~6          ; combout          ;
+; |Run8|74138:inst5|15~7          ; |Run8|74138:inst5|15~7          ; combout          ;
+; |Run8|div_250hz:inst25|cnt[3]   ; |Run8|div_250hz:inst25|cnt[3]   ; q                ;
+; |Run8|div_250hz:inst25|cnt[4]   ; |Run8|div_250hz:inst25|cnt[4]   ; q                ;
+; |Run8|div_250hz:inst25|cnt[5]   ; |Run8|div_250hz:inst25|cnt[5]   ; q                ;
+; |Run8|div_250hz:inst25|cnt[6]   ; |Run8|div_250hz:inst25|cnt[6]   ; q                ;
+; |Run8|div_250hz:inst25|cnt[7]   ; |Run8|div_250hz:inst25|cnt[7]   ; q                ;
+; |Run8|div_250hz:inst25|Equal0~1 ; |Run8|div_250hz:inst25|Equal0~1 ; combout          ;
+; |Run8|div_250hz:inst25|cnt[8]   ; |Run8|div_250hz:inst25|cnt[8]   ; q                ;
+; |Run8|div_250hz:inst25|cnt[9]   ; |Run8|div_250hz:inst25|cnt[9]   ; q                ;
+; |Run8|div_250hz:inst25|cnt[10]  ; |Run8|div_250hz:inst25|cnt[10]  ; q                ;
+; |Run8|div_250hz:inst25|cnt[11]  ; |Run8|div_250hz:inst25|cnt[11]  ; q                ;
+; |Run8|div_250hz:inst25|Equal0~2 ; |Run8|div_250hz:inst25|Equal0~2 ; combout          ;
+; |Run8|div_250hz:inst25|cnt[12]  ; |Run8|div_250hz:inst25|cnt[12]  ; q                ;
+; |Run8|div_250hz:inst25|cnt[13]  ; |Run8|div_250hz:inst25|cnt[13]  ; q                ;
+; |Run8|div_250hz:inst25|cnt[14]  ; |Run8|div_250hz:inst25|cnt[14]  ; q                ;
+; |Run8|div_250hz:inst25|cnt[15]  ; |Run8|div_250hz:inst25|cnt[15]  ; q                ;
+; |Run8|div_250hz:inst25|Equal0~3 ; |Run8|div_250hz:inst25|Equal0~3 ; combout          ;
+; |Run8|dvf:inst24|cnt[3]         ; |Run8|dvf:inst24|cnt[3]         ; q                ;
+; |Run8|led1~output               ; |Run8|led1~output               ; o                ;
+; |Run8|led1                      ; |Run8|led1                      ; padout           ;
+; |Run8|led7~output               ; |Run8|led7~output               ; o                ;
+; |Run8|led7                      ; |Run8|led7                      ; padout           ;
+; |Run8|led8~output               ; |Run8|led8~output               ; o                ;
+; |Run8|led8                      ; |Run8|led8                      ; padout           ;
+; |Run8|led11[2]~output           ; |Run8|led11[2]~output           ; o                ;
+; |Run8|led11[2]                  ; |Run8|led11[2]                  ; padout           ;
++---------------------------------+---------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Full Version
+    Info: Processing started: Fri Oct 22 00:41:10 2021
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off Run8 -c Run8
+Info: Using vector source file "D:/最近要用到的文件/邱老师课程作业/实验文件/Run88.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      53.60 %
+Info: Number of transitions in simulation is 4694
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 165 megabytes
+    Info: Processing ended: Fri Oct 22 00:41:12 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+
